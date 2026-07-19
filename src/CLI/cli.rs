@@ -103,9 +103,9 @@ pub fn parse(args: Vec<String>) -> Result<(), Box<dyn std::error::Error>> {
             let ctx = inkwell::context::Context::create();
             let line_count = source.lines().count();
             let opt_level = if line_count >= 100 {
-                inkwell::OptimizationLevel::None
+                inkwell::OptimizationLevel::Default
             } else {
-                inkwell::OptimizationLevel::None
+                inkwell::OptimizationLevel::Default
             };
 
             let mut codegen = crate::B::codegen::CodeGen::new(&ctx, "main", opt_level);
