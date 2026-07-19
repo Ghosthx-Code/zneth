@@ -4,6 +4,20 @@
 > This Lang Can only Print, Make Vars, Function ( without params, or calling ), no math
 > Prining Can Only Do Int/String's, no float but i will impl that
 
+> [!NOTE]
+> You have to have rust/justfile/llvm installed
+
+### To Install justfile
+```bash
+sudo apt install just
+```
+```bash
+sudo dnf install just
+```
+```bash
+sudo pacman -S just
+```
+
 ## For people wanting to use this compile
 ###### i will go over some syntax
 
