@@ -6,17 +6,17 @@
 > Do not use the lang for anything big it is just for fun right know 
 
 > [!NOTE]
-> You have to have rust/justfile/llvm installed
+> You have to have rust/justfile/llvm/clang installed
 
-### To Install justfile
+### To Install the JustFile/Clang
 ```bash
-sudo apt install just
+sudo apt install just clang
 ```
 ```bash
-sudo dnf install just
+sudo dnf install just clang
 ```
 ```bash
-sudo pacman -S just
+sudo pacman -S just clang
 ```
 
 ## For people wanting to use this compile
