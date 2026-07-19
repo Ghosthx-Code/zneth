@@ -1,0 +1,29 @@
+[package]
+name = "zneth"
+version = "0.1.0"
+edition = "2024"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+strip = true
+panic = "abort"
+
+[lints.rust]
+unreachable_pub = "deny"
+unused_qualifications = "deny"
+dead_code = "warn"
+
+[lints.clippy]
+pedantic = { level = "deny", priority = -1 }
+perf = { level = "deny", priority = -1 }
+unwrap_used = "warn"
+must_use_candidate = "allow"
+missing_errors_doc = "allow"
+
+[profile.dev.package."*"]
+opt-level = 2
+
+[dependencies]
+inkwell = { version = "0.9.0", features = ["llvm18-1"]}
