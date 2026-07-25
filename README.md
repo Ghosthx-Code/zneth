@@ -1,6 +1,10 @@
 # Zneth Coding Lang
 
 > [!WARNING]
+> I Have Stopped working on this lang
+> i do not think it will be good to so i am making a new lang
+
+> [!WARNING]
 > This Lang Can only Print, Make Vars, Function ( without params, or calling ), no math
 > Prining Can Only Do Int/String's, no float but i will impl that
 > Do not use the lang for anything big it is just for fun right know 
